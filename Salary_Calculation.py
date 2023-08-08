@@ -3,6 +3,11 @@
 #Calculation of GIS, Medical Allowances, Professional Taxes needs to be implemented
 #A small introduction and explanation of the program is to appear on the CLI so that users can understand the operations of the program. 
 
+#Calculation for Provitional salary. In Provisional salary, Gis is 30% for each Grade. eg. for Grade4 it will be 30, for grade3 it will be 60.
+#if more than 25000 gross than ptax is 208 otherwise 150
+# Gis  for g4 is 100, g3 is 200, g2 is 300 and g4 is 400
+
+
 #Dependencies
 import os
 import math
