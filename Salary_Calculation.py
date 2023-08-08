@@ -18,6 +18,7 @@ GIS = 60
 PTax = 208
 Ded = 0
 
+
 DA = int(input("Enter the DA percentage for the month: "))
 HRA = int(input("Enter the HRA percentage for the month: "))
 
