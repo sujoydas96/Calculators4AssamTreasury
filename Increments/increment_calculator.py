@@ -1,21 +1,17 @@
-
-inp = 0
-rem = 0
-
+#Functions
+def increment(a: int):
+    a = int(a*1.03)
+    print(a)
+    rem = a%10
+    if rem == 0:
+        return a
+    else:
+        return a+(10-rem)
+        
 try:
     while True:
         inp = int(input("Present Value: "))
-        ans = int(inp*1.03)
-        rem = ans%10
-
-        if rem != 0:
-            rem = 10-rem
-            print(ans+rem)
-        else:
-            print(ans)
+        print(increment(inp))
+        
 except:
     print("Error has occured")
-
-
-    
-    

@@ -5,7 +5,8 @@
 
 #Calculation for Provitional salary. In Provisional salary, Gis is 30% for each Grade. eg. for Grade4 it will be 30, for grade3 it will be 60.
 #if more than 25000 gross than ptax is 208 otherwise 150
-# Gis  for g4 is 100, g3 is 200, g2 is 300 and g4 is 400
+#GIS  for G4 is 100, g3 is 200, g2 is 300 and g4 is 400
+#For Provisional Salary, the GIS is 30% of the actual value mentioned above.
 
 
 #Dependencies
@@ -13,19 +14,23 @@ import os
 import math
 
 #Global Variables
+sal_type = ""
+eGrade = 0  #employee Grade
 TotalPay = 0
 DearA = 0
 HouseR = 0
 NPS = 0
 Gross = 0
 Net = 0
-GIS = 60
+GIS = 0
 PTax = 208
 Ded = 0
 
 
 DA = int(input("Enter the DA percentage for the month: "))
 HRA = int(input("Enter the HRA percentage for the month: "))
+eGrade = int(input("Enter the Grade of the Employee: "))
+sal_type = str(input("Regular Salary/ Provisional Salary? (Y/N) : "))
 
 MA = int(input("Enter the Medical Allowance for the month: "))
 os.system("cls")
@@ -40,6 +45,9 @@ try:
     
         # All Calculations
         print("\n")
+
+        
+
         TotalPay = BP+GP
         DearA = (DA/100)*TotalPay
         HouseR = (HRA/100)*TotalPay
