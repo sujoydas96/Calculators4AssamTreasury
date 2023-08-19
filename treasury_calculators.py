@@ -1,3 +1,5 @@
+import math
+
 class treasury_calculators:
     def next10(self, num: float):
         num = int(num)
@@ -12,5 +14,15 @@ class treasury_calculators:
         if rem == 0:
             return num
         else: return num+(100-rem)
+
+    def DA(self,princi:int,DA:int):   #DA is a whole number denoting the current percentage
+        return princi*(DA/100)
+    
+    def increment(self,princi:int ,per:int):
+        return princi*(per/100)
+    
+    def round(self, number:float):
+        return int(math.round(number))
+
 
 #create a class of calculators that have the all important functions necessary of the calculations
