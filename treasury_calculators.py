@@ -29,5 +29,14 @@ class treasury_calculators:
 class time_calc:
 
     def leap_year(self,yr):
-        pass
+        if yr%4 == 0:
+            if yr%100 == 0:
+                if yr%400 == 0:
+                    return True
+                else:
+                    return False
+            else:
+                return True
+        else:
+            return False
         
