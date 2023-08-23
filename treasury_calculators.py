@@ -1,5 +1,6 @@
 import math
 
+#create a class of calculators that have the all important functions necessary of the calculations
 class treasury_calculators:
     def next10(self, num: float):
         num = int(num)
@@ -25,4 +26,8 @@ class treasury_calculators:
         return int(math.round(number))
 
 
-#create a class of calculators that have the all important functions necessary of the calculations
+class time_calc:
+
+    def leap_year(self,yr):
+        pass
+        
