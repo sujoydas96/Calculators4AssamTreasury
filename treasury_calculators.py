@@ -1,7 +1,7 @@
 import math
 
 #create a class of calculators that have the all important functions necessary of the calculations
-class treasury_calculators:
+class calculators:
     def next10(self, num: float):
         num = int(num)
         rem = num%10
@@ -23,11 +23,10 @@ class treasury_calculators:
         return princi*(per/100)
     
     def round(self, number:float):
-        return int(math.round(number))
+        return int(round(number))
 
 
 class time_calc:
-
     def leap_year(self,yr):
         if yr%4 == 0:
             if yr%100 == 0:
