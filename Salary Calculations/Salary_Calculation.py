@@ -10,6 +10,7 @@
 
 
 #Dependencies
+
 import os
 import math
 
@@ -40,7 +41,7 @@ try:
         print("\n## ALLOWANCES ##")
         print("__________________________________________")
 
-        BP = int(input("Enter Basic Pay: "))
+        BP = int(input("Enter Pay: "))
         GP = int(input("Enter Grade Pay: "))
     
         # All Calculations
@@ -49,8 +50,8 @@ try:
         
 
         TotalPay = BP+GP
-        DearA = (DA/100)*TotalPay
-        HouseR = (HRA/100)*TotalPay
+        DearA = int(round((DA/100)*TotalPay))
+        HouseR = int(round((HRA/100)*TotalPay))
         Gross = TotalPay+DearA+HouseR+MA
         NPS = 0.1*(TotalPay+DearA)
         Ded = NPS+GIS+PTax
@@ -84,5 +85,6 @@ try:
 
         os.system("pause")
         os.system("cls")
+
 except:
     print("An error has occured!")
